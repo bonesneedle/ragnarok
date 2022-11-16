@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221115150341">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221116070850">
 	<title>God of War Ragnarok</title>
 </head>
 
@@ -81,7 +81,7 @@
 							Fimbulwinter, a great winter that spans three summers, is drawing to a close which will begin
 							the
 							prophesied Ragnarök.</div>
-						<a href="#" class="main-screen__button btn btn-purple">buy now</a>
+						<a href="#" data-popup=".get-game" class="main-screen__button btn btn-purple">buy now</a>
 					</div>
 					<div class="main-screen__decor main-screen__img">
 						<picture><source srcset="img/main-screen/backgrounds/kratos.webp" type="image/webp"><img src="img/main-screen/backgrounds/kratos.jpg" alt="kratos"></picture>
@@ -91,10 +91,125 @@
 					</div>
 				</div>
 			</section>
+			<section class="page__editions editions">
+				<div class="editions__container container">
+					<div class="editions__title title">Editions</div>
+					<div class="editions__cards">
+						<div class="editions__card card-editions">
+							<div class="card-editions__content">
+								<div class="card-editions__img">
+									<picture><source srcset="img/editions/1.webp" type="image/webp"><img src="img/editions/1.jpg" alt="Standard Edition"></picture>
+								</div>
+								<div class="card-editions__title">Standard Edition</div>
+								<div class="card-editions__subtitle">ps5</div>
+								<div class="card-editions__info">
+									<p>Offline play enabled</p>
+									<p>Remote Play supported</p>
+									<p>Trigger effect requierd</p>
+								</div>
+								<div class="card-editions__price">19.99$</div>
+								<div class="card-editions__button-wrap">
+									<a href="#" data-popup=".get-game" class="card-editions__button btn btn-purple btn-small">buy
+										now</a>
+								</div>
+							</div>
+						</div>
+						<div class="editions__card card-editions">
+							<div class="card-editions__content">
+								<div class="card-editions__img">
+									<picture><source srcset="img/editions/2.webp" type="image/webp"><img src="img/editions/2.jpg" alt="Standard Edition"></picture>
+								</div>
+								<div class="card-editions__title">Standard Edition</div>
+								<div class="card-editions__subtitle">ps4</div>
+								<div class="card-editions__info">
+									<p>Offline play enabled</p>
+									<p>Remote Play supported</p>
+									<p>Trigger effect requierd</p>
+								</div>
+								<div class="card-editions__price">19.99$</div>
+								<div class="card-editions__button-wrap">
+									<a data-popup=".get-game" href="#" class="card-editions__button btn btn-purple btn-small">buy
+										now</a>
+								</div>
+							</div>
+						</div>
+						<div class="editions__card card-editions">
+							<div class="card-editions__content">
+								<div class="card-editions__img">
+									<picture><source srcset="img/editions/3.webp" type="image/webp"><img src="img/editions/3.jpg" alt="Standard Edition"></picture>
+								</div>
+								<div class="card-editions__title">Digital Deluxe Edition</div>
+								<div class="card-editions__subtitle">ps5</div>
+								<div class="card-editions__info">
+									<p>All features of Standatd Edition</p>
+									<p>Darkdale Armour</p>
+									<p>Official digital soundtrack</p>
+								</div>
+								<div class="card-editions__price">29.99$</div>
+								<div class="card-editions__button-wrap">
+									<a data-popup=".get-game" href="#" class="card-editions__button btn btn-purple btn-small">buy
+										now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		
 	</div>
-	<script src="js/app.min.js?_v=20221115150341"></script>
+	<div class="get-game popup">
+		<div class="get-game__container popup__container">
+			<div class="get-game__body popup__body">
+				<div class="get-game__content">
+					<div class="get-game__title">god of war raganrok</div>
+					<div class="get-game__subtitle">standard edition <span>ps5</span> </div>
+					<form action="#" class="get-game__form form-get-game" id="form-get-game">
+						<div class="form-get-game__item">
+							<label class="form-get-game__label">credit card:</label>
+							<input placeholder="0000 0000 0000 000" type="text" name="creditCard" inputmode="numeric"
+								pattern="([0-9]{16})" class="form-get-game__input">
+						</div>
+						<div class="form-get-game__item form-get-game__item-flex">
+							<div class="form-get-game__item-little">
+								<label class="form-get-game__label">expire:</label>
+								<input placeholder="MM/YY" type="text" name="expire" class="form-get-game__input"
+									pattern="[0-9]{2}/[0-9]{2}">
+							</div>
+							<div class="form-get-game__item-little">
+								<label class="form-get-game__label">ccv:</label>
+								<input placeholder="***" name="ccv" type="password" class="form-get-game__input"
+									pattern="([0-9]{3})">
+							</div>
+						</div>
+						<div class="form-get-game__item">
+							<label class="form-get-game__label">instant:</label>
+							<input placeholder="firstName SecondName" name="instant" type="text" class="form-get-game__input">
+						</div>
+						<div class="form-get-game__agreement agreement-form-get-game">
+							<input class="agreement-form-get-game__checkbox" type="checkbox" name="checkbox">
+							<div class="agreement-form-get-game__text">
+								I agree with the <a href="#">rules</a> of the site
+							</div>
+						</div>
+						<div class="form-get-game__text">Download of this product is subject to the PlayStation Network Terms
+							of Service and our Software Usage Terms plus any specific additional conditions applying to this
+							product. If you do not wish to accept these terms, do not download this product. See Terms of
+							Service for more important information.</div>
+						<div class="form-get-game__price-wrap">
+							<span>your total summa:</span>
+							<div class="form-get-game__price">
+								19.99$
+							</div>
+						</div>
+						<button type="submit" class="form-get-game__button btn btn-purple" name="button">buy now</button>
+					</form>
+				</div>
+				<div class="get-game__close popup__close"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221116070850"></script>
 </body>
 
 </html>
