@@ -715,6 +715,8 @@ body.lock {
   background: -webkit-gradient(linear, left top, right top, color-stop(0.2%, #1c2023), color-stop(41.42%, rgba(28, 32, 35, 0)));
   background: -o-linear-gradient(left, #1c2023 0.2%, rgba(28, 32, 35, 0) 41.42%);
   background: linear-gradient(90deg, #1c2023 0.2%, rgba(28, 32, 35, 0) 41.42%);
+  background-position-x: left;
+  background-position-y: top;
 }
 
 .main-screen__gif::before {
