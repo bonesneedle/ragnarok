@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/style.min.css?_v=20221117102901">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221117153047">
 	<title>God of War Ragnarok</title>
 </head>
 
@@ -169,7 +169,8 @@
 								</div>
 								<div class="controller__buy">
 									<div class="controller__price">35.99$</div>
-									<a href="#" class="controller__button btn btn-red">buy dualsense with a game</a>
+									<a href="#" data-popup=".get-controller" class="controller__button btn btn-red">buy dualsense
+										with a game</a>
 								</div>
 							</div>
 						</div>
@@ -199,32 +200,33 @@
 		<div class="get-game__container popup__container">
 			<div class="get-game__body popup__body">
 				<div class="get-game__content">
-					<div class="get-game__title">god of war raganrok</div>
+					<div class="get-game__title title-form">god of war raganrok</div>
 					<div class="get-game__subtitle">standard edition <span>ps5</span> </div>
 					<form action="#" class="get-game__form form-get-game" id="form-get-game">
 						<div class="form-get-game__item">
-							<label class="form-get-game__label">credit card:</label>
+							<label class="form-get-game__label label">credit card:</label>
 							<input placeholder="0000 0000 0000 000" type="text" name="creditCard" inputmode="numeric"
-								pattern="([0-9]{16})" class="form-get-game__input">
+								pattern="([0-9]{16})" class="form-get-game__input input">
 						</div>
 						<div class="form-get-game__item form-get-game__item-flex">
 							<div class="form-get-game__item-little">
-								<label class="form-get-game__label">expire:</label>
-								<input placeholder="MM/YY" type="text" name="expire" class="form-get-game__input"
+								<label class="form-get-game__label label">expire:</label>
+								<input placeholder="MM/YY" type="text" name="expire" class="form-get-game__input input"
 									pattern="[0-9]{2}/[0-9]{2}">
 							</div>
 							<div class="form-get-game__item-little">
-								<label class="form-get-game__label">ccv:</label>
-								<input placeholder="***" name="ccv" type="password" class="form-get-game__input"
+								<label class="form-get-game__label label">ccv:</label>
+								<input placeholder="***" name="ccv" type="password" class="form-get-game__input input"
 									pattern="([0-9]{3})">
 							</div>
 						</div>
 						<div class="form-get-game__item">
-							<label class="form-get-game__label">instant:</label>
-							<input placeholder="firstName SecondName" name="instant" type="text" class="form-get-game__input">
+							<label class="form-get-game__label label">instant:</label>
+							<input placeholder="firstName SecondName" name="instant" type="text"
+								class="form-get-game__input input">
 						</div>
 						<div class="form-get-game__agreement agreement-form-get-game">
-							<input class="agreement-form-get-game__checkbox" type="checkbox" name="checkbox">
+							<input class="agreement-form-get-game__checkbox checkbox" type="checkbox" name="checkbox">
 							<div class="agreement-form-get-game__text">
 								I agree with the <a href="#">rules</a> of the site
 							</div>
@@ -235,7 +237,7 @@
 							Service for more important information.</div>
 						<div class="form-get-game__price-wrap">
 							<span>your total summa:</span>
-							<div class="form-get-game__price">
+							<div class="form-get-game__price price">
 								19.99$
 							</div>
 						</div>
@@ -246,7 +248,121 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20221117102901"></script>
+	<div class="get-controller popup">
+		<div class="get-controller__container popup__container">
+			<div class="get-controller__body popup__body">
+				<div class="get-controller__title title-form">Controller DualSense</div>
+				<form action="#" class="get-controller__form form-get-controller">
+					<div class="form-get-controller__item">
+						<label class="form-get-controller__label label">credit card:</label>
+						<input placeholder="0000 0000 0000 000" type="text" name="creditCard" inputmode="numeric"
+							pattern="([0-9]{16})" class="form-get-controller__input input">
+					</div>
+					<div class="form-get-controller__item form-get-controller__item-flex">
+						<div class="form-get-controller__item-little">
+							<label class="form-get-controller__label label">expire:</label>
+							<input placeholder="MM/YY" type="text" name="expire" class="form-get-controller__input input"
+								pattern="[0-9]{2}/[0-9]{2}">
+						</div>
+						<div class="form-get-controller__item-little">
+							<label class="form-get-controller__label label">ccv:</label>
+							<input placeholder="***" name="ccv" type="password" class="form-get-controller__input input"
+								pattern="([0-9]{3})">
+						</div>
+					</div>
+					<div class="form-get-controller__item">
+						<label class="form-get-controller__label label">instant:</label>
+						<input placeholder="firstName SecondName" name="instant" type="text"
+							class="form-get-controller__input input">
+					</div>
+					<div class="form-get-controller__item form-get-controller__item-flex">
+						<div class="form-get-controller__item-little">
+							<label class="form-get-controller__label label">City:</label>
+							<input placeholder="City" type="text" name="city" class="form-get-controller__input input">
+						</div>
+						<div class="form-get-controller__item-little">
+							<label class="form-get-controller__label label">Country:</label>
+							<input placeholder="Country" name="country" type="text" class="form-get-controller__input input">
+						</div>
+					</div>
+					<div class="form-get-controller__item">
+						<label class="form-get-controller__label label">Street:</label>
+						<input placeholder="Street" name="street" type="text" class="form-get-controller__input input">
+					</div>
+					<div class="form-get-controller__agreement agreement-form-get-controller">
+						<input class="agreement-form-get-controller__checkbox checkbox" type="checkbox" name="checkbox">
+						<div class="agreement-form-get-controller__text">
+							I agree with the <a href="#">rules</a> of the site
+						</div>
+					</div>
+					<div class="form-get-controller__text">Download of this product is subject to the PlayStation Network
+						Terms
+						of Service and our Software Usage Terms plus any specific additional conditions applying to this
+						product. If you do not wish to accept these terms, do not download this product. See Terms of
+						Service for more important information.</div>
+					<div class="form-get-controller__price-wrap">
+						<span>your total summa:</span>
+						<div class="form-get-controller__price price">35.99$</div>
+					</div>
+					<div class="form-get-controller__buttons">
+						<a href="#" data-popup=".choose-edition" class="form-get-controller__button btn btn-purple">buy with
+							game</a>
+						<button type="submit" class="form-get-controller__button btn btn-red" name="button">buy now</button>
+					</div>
+				</form>
+				<div class="popup__close"></div>
+			</div>
+		</div>
+	</div>
+	<div class="choose-edition popup">
+		<div class="choose-edition__container popup__container">
+			<div class="choose-edition__body popup__body">
+				<div class="choose-edition__row">
+					<div class="choose-edition__item item-choose-edition">
+						<div class="item-choose-edition__title title-form">Standard Edition</div>
+						<div class="item-choose-edition__text">
+							<p>Offline play enabled</p>
+							<p>Remote Play supported</p>
+							<p>Trigger effect requierd</p>
+						</div>
+						<div class="item-choose-edition__body">
+							<div class="item-choose-edition__subtitle">ps4</div>
+							<div class="item-choose-edition__price price">18.99$</div>
+						</div>
+						<a href="#" class="item-choose-edition__button btn btn-purple">add edition</a>
+					</div>
+					<div class="choose-edition__item item-choose-edition">
+						<div class="item-choose-edition__title title-form">Standard Edition</div>
+						<div class="item-choose-edition__text">
+							<p>Offline play enabled</p>
+							<p>Remote Play supported</p>
+							<p>Trigger effect requierd</p>
+						</div>
+						<div class="item-choose-edition__body">
+							<div class="item-choose-edition__subtitle">ps5</div>
+							<div class="item-choose-edition__price price">19.99$</div>
+						</div>
+						<a href="#" class="item-choose-edition__button btn btn-purple">add edition</a>
+					</div>
+					<div class="choose-edition__item item-choose-edition">
+						<div class="item-choose-edition__title title-form">Digital Deluxe Edition</div>
+						<div class="item-choose-edition__text">
+							<p>All features of Standard Edition</p>
+							<p>Darkdale Armour</p>
+							<p>Oficcial digital soundtrack</p>
+						</div>
+						<div class="item-choose-edition__body">
+							<div class="item-choose-edition__subtitle">ps5</div>
+							<div class="item-choose-edition__price price">29.99$</div>
+						</div>
+						<a href="#" class="item-choose-edition__button btn btn-purple">add edition</a>
+					</div>
+				</div>
+				<div class="popup__close"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20221117153047"></script>
 </body>
 
 </html>
