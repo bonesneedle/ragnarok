@@ -1528,6 +1528,12 @@ body.lock {
      object-fit: cover;
 }
 
+.info-game-explore__options {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
 .info-game-explore__options-list {
   margin-bottom: 25px;
 }
@@ -1541,6 +1547,7 @@ body.lock {
 }
 
 .info-game-explore__options-list li {
+  display: block;
   font-size: 15px;
   font-size: 15px;
   line-height: 240%;
@@ -1650,6 +1657,9 @@ body.lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
