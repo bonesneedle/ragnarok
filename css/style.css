@@ -1387,6 +1387,10 @@ body.lock {
   padding-bottom: 90px;
 }
 
+.explore__container {
+  border: 1px solid #000;
+}
+
 .explore__title {
   margin-bottom: 30px;
 }
@@ -1456,10 +1460,13 @@ body.lock {
 }
 
 .control-game-explore__checkbox::before {
-  width: 100%;
+  width: 110%;
   height: 100%;
   background-color: #30373f;
   border-radius: 12px;
+  -webkit-transform: translate(-5%, 0);
+      -ms-transform: translate(-5%, 0);
+          transform: translate(-5%, 0);
 }
 
 .control-game-explore__checkbox::after {
@@ -1486,8 +1493,8 @@ body.lock {
 .info-game-explore__img-wrap {
   pointer-events: none;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
   position: relative;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1529,9 +1536,10 @@ body.lock {
 }
 
 .info-game-explore__options {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  border: 1px solid #000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 .info-game-explore__options-list {
@@ -1657,9 +1665,6 @@ body.lock {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -2415,6 +2420,11 @@ body.lock {
 
   .menu-header__link:hover {
     color: #8856d9;
+  }
+
+  .control-game-explore__checkbox:hover::before,
+  .control-game-explore__checkbox:hover::after {
+    cursor: pointer;
   }
 }
 
