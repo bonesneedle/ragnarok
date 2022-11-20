@@ -1086,6 +1086,10 @@ body.lock {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
 }
 
 .main-screen__body {
@@ -1609,13 +1613,6 @@ body.lock {
 }
 
 @media (min-width: 768px) {
-  .main-screen__container {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-height: 100vh;
-  }
-
   .game-explore:nth-child(2n+1) .game-explore__info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -2030,7 +2027,7 @@ body.lock {
 
 @media (max-width: 767px), (max-height: 767px) {
   .popup__container {
-    padding-top: 70px;
+    padding-top: 20px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
