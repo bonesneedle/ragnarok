@@ -370,8 +370,12 @@ body {
 .checkbox::before {
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 115%;
+  height: 115%;
+  -webkit-transform: translate(-7.5%, -7.5%);
+      -ms-transform: translate(-7.5%, -7.5%);
+          transform: translate(-7.5%, -7.5%);
+  border-radius: 6px;
   background-color: #30373f;
 }
 
@@ -381,8 +385,8 @@ body {
   -webkit-transform: translate(-50%, -50%) scale(0);
       -ms-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  width: 65%;
-  height: 65%;
+  width: 70%;
+  height: 70%;
   border-radius: 6px;
   background-color: #8856d9;
 }
@@ -1211,8 +1215,8 @@ body {
 }
 
 .editions__card.anim-play {
-  -webkit-animation: rotate 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotate 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .card-editions {
