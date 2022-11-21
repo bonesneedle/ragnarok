@@ -144,10 +144,6 @@ body {
   background-color: #1c2023;
 }
 
-body.lock {
-  overflow: hidden;
-}
-
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
@@ -886,9 +882,9 @@ body.lock {
   width: 100%;
   z-index: 100;
   background-color: transparent;
-  -webkit-transition: background-color 0.3s ease all;
-  -o-transition: background-color 0.3s ease all;
-  transition: background-color 0.3s ease all;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
   padding: 5px 0;
 }
 
@@ -901,6 +897,13 @@ body.lock {
   position: absolute;
   z-index: -1;
   background-color: rgba(28, 32, 35, 0.5);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header.bg-active::before {
+  background-color: #1c2023;
 }
 
 .header__container {
@@ -1208,8 +1211,8 @@ body.lock {
 }
 
 .editions__card.anim-play {
-  -webkit-animation: rotate 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-  animation: rotate 1s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  -webkit-animation: rotate 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: rotate 0.6s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .card-editions {
@@ -1947,7 +1950,6 @@ body.lock {
     height: 100%;
     overflow: auto;
     z-index: -3;
-    background-color: #30373f;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
@@ -1955,6 +1957,17 @@ body.lock {
 
   .header__menu.active {
     left: 0;
+  }
+
+  .header__menu.active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .header__language-option {
@@ -1967,6 +1980,7 @@ body.lock {
 
   .menu-header__list {
     padding: 80px 20px 20px 20px;
+    min-height: 100%;
   }
 
   .menu-header__link {
@@ -2006,6 +2020,23 @@ body.lock {
   .header__burger::after,
   .header__burger span {
     height: 3px;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 1024px) {
+  .header__menu.active .menu-header__list {
+    position: relative;
+  }
+
+  .header__menu.active .menu-header__list::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -4;
+    width: 100%;
+    min-height: 100%;
+    background-color: #30373f;
   }
 }
 
