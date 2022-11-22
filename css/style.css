@@ -1827,15 +1827,16 @@ body {
 }
 
 .news__container {
-  max-width: 1280px;
+  max-width: 1364px;
 }
 
 .news__title {
   margin-bottom: 30px;
 }
 
-.news__content {
-  overflow: visible;
+.news__content-wrap {
+  position: relative;
+  padding: 0 42px;
 }
 
 .news__buttons {
@@ -1940,18 +1941,6 @@ body {
   background: -o-linear-gradient(272.13deg, #30373f 41.63%, #141615 185.57%);
   background: linear-gradient(177.87deg, #30373f 41.63%, #141615 185.57%);
   border-radius: 6px;
-  -webkit-transition: opacity 0.4s linear 0s;
-  -o-transition: opacity 0.4s linear 0s;
-  transition: opacity 0.4s linear 0s;
-  opacity: 0.3;
-}
-
-.slide-news.swiper-slide-active {
-  opacity: 1;
-}
-
-.slide-news.swiper-slide-next {
-  opacity: 1;
 }
 
 .slide-news__wrap {
@@ -2171,20 +2160,6 @@ body {
   }
 }
 
-@media (min-width: 1341px) {
-  .news__button-prev {
-    -webkit-transform: translate(-100%, 0);
-        -ms-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-
-  .news__button-next {
-    -webkit-transform: translate(100%, 0);
-        -ms-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-}
-
 @media (min-width: 1920px) {
   .header__language-current {
     font-size: calc(14 * (100vw / 1920));
@@ -2238,20 +2213,6 @@ body {
 @media (max-width: 1920px) {
   .main-screen__body {
     margin-left: calc(15px + 210 * ((100vw - 1025px) / 895));
-  }
-}
-
-@media (max-width: 1340px) {
-  .news__content {
-    overflow: hidden;
-  }
-
-  .news__button {
-    background-color: rgba(140, 150, 160, 0.5);
-  }
-
-  .news__button.swiper-button-disabled {
-    background-color: rgba(140, 150, 160, 0.2);
   }
 }
 
@@ -2960,20 +2921,12 @@ body {
 }
 
 @media (max-width: 998px) and (min-width: 768px), (max-width: 600px) {
+  .news__content-wrap {
+    padding: 0;
+  }
+
   .news__buttons {
     display: none;
-  }
-}
-
-@media (max-width: 600px), (max-width: 998px) and (min-width: 768px) {
-  .slide-news.swiper-slide-next {
-    opacity: 0.3;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 601px) {
-  .slide-news__text {
-    padding-right: 10px;
   }
 }
 
@@ -3050,7 +3003,7 @@ body {
   }
 
   .slide-news__button:hover {
-    background-color: #65686b;
+    background-color: #8856d9;
   }
 }
 
