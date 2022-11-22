@@ -3047,6 +3047,10 @@ body {
     background-color: #8856d9;
   }
 
+  .news__button:hover.swiper-button-disabled {
+    background-color: rgba(140, 150, 160, 0.5);
+  }
+
   .slide-news__button:hover {
     background-color: #65686b;
   }
