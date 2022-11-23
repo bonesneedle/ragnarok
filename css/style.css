@@ -570,6 +570,25 @@ body {
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+.popup__background {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: calc(100% - 80px);
+  height: calc(100% - 30px);
+  z-index: -1;
+}
+
+.popup__background img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .input {
   background-color: #30373f;
   border-radius: 6px;
