@@ -481,7 +481,7 @@ body {
 }
 
 .popup {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   top: 0;
   left: 0;
@@ -572,13 +572,10 @@ body {
 
 .popup__background {
   position: absolute;
-  top: 0px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-      -ms-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  width: calc(100% - 80px);
-  height: calc(100% - 30px);
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 80px);
   z-index: -1;
 }
 
@@ -1183,7 +1180,11 @@ body {
 }
 
 .header__language ul {
-  display: none;
+  opacity: 0;
+  -webkit-transform: translate(0, -100%) scale(0);
+      -ms-transform: translate(0, -100%) scale(0);
+          transform: translate(0, -100%) scale(0);
+  visibility: hidden;
   position: absolute;
   min-width: 100px;
   max-height: 300px;
@@ -1191,10 +1192,17 @@ body {
   background-color: #30373f;
   padding: 10px;
   border-radius: 20px;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 
 .header__language.active ul {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translate(0, 0) scale(1);
+      -ms-transform: translate(0, 0) scale(1);
+          transform: translate(0, 0) scale(1);
 }
 
 .header__language-current {
@@ -1257,6 +1265,9 @@ body {
   font-size: 16px;
   font-size: 16px;
   line-height: 192.8571428571%;
+  -webkit-transition: all 0.1s linear 0s;
+  -o-transition: all 0.1s linear 0s;
+  transition: all 0.1s linear 0s;
 }
 
 .menu-header__link {
@@ -1265,6 +1276,10 @@ body {
   line-height: 192.8571428571%;
   text-transform: uppercase;
   color: #8c96a0;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
 
 .header-time {
@@ -3191,11 +3206,21 @@ body {
   }
 
   .header__language:hover ul {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0, 0) scale(1);
+        -ms-transform: translate(0, 0) scale(1);
+            transform: translate(0, 0) scale(1);
   }
 
   .header__language-current:hover {
     cursor: pointer;
+  }
+
+  .header__language-option:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
   .header__language-option:hover {
@@ -3205,6 +3230,9 @@ body {
 
   .menu-header__link:hover {
     color: #8856d9;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
   }
 
   .trailer__button:hover {
